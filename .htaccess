@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+# RewriteCond %{HTTP_HOST} ^example.com [NC]
+# RewriteRule ^(.*)$ https://www.example.com/$1 [L,R]
+# RewriteCond %{ENV:HTTPS} !on [NC]
+# RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
