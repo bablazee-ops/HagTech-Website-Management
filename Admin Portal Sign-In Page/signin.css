@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+img.mb-4{
+  max-width: 30%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+
+/* MOBILE*/
+@media (max-width: 480px) {
+  img.mb-4{
+    min-width: 80%;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 40px 50px;
+  }
+  .form-signin input[type="password"], .form-signin input[type="email"], input#floatingInput, .form-signin ::placeholder{
+    min-width: 70%;
+    font-size: 1em !important;
+  }
+  .btn {
+    font-size: 1em !important;
+    min-width: 75%;
+  }
+  .checkbox {
+    font-size: .8em !important;
+  }
+  body {
+    overflow: hidden;
+  }
+
+}  
+
+/* ALL OTHER DEVICE SIZES */
+
+body, .h1, .form-signin, .form-signin input[type="email"], .form-signin input[type="password"], label, .btn {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.h1, .form-signin, .form-signin ::placeholder, .btn{
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 6em;
+}
+
+
+body {
+  display: block;
+  margin: auto;
+  align-items: center;
+  background: linear-gradient(-65deg,#000, #000f1c, #012240, #003c71, #0055a1);
+                background-size: 500% 300%;
+                animation: gradient 15s ease infinite;
+                }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+}
+
+.form-signin {
+  align-items: center;
+  padding: 15px;
+  margin: 50px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+input#floatingPassword, input#floatingInput {
+  display: block;
+  margin: auto;
+  width: 40%;
+  font-size: 1.2em;
+}
+
+.form-signin input[type="email"], .form-signin input[type="password"], .btn{
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.form-signin input[type="email"], .form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 80%;
+  padding: 10px;
+}
+
+.checkbox {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1em;
+}
+
+.form-signin ::placeholder {
+  color: hsla(0, 0%, 100%, 0.79);
+  font-size: 1.1em;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+  width: 30%;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  transition: .4s ease-in;
+  color: #003c71;
+  background-color: #fff;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+
