@@ -24,6 +24,8 @@ body {
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background:  linear-gradient(120deg,#000, #012240, #003c71) !important;
+  background-size: 200% 100% !important;
 }
 
 @media (max-width: 767.98px) {
@@ -43,16 +45,16 @@ body {
 
 .sidebar .nav-link {
   font-weight: 500;
-  color: #333;
+  color: rgba(255, 255, 255, 0.658);
 }
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #727272;
+  color: rgba(255, 255, 255, 0.658);
 }
 
 .sidebar .nav-link.active {
-  color: #007bff;
+  color: #fff;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -69,11 +71,14 @@ body {
  * Navbar
  */
 
+.navbar-dark .navbar-brand {
+  background: transparent !important;
+}
+
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
@@ -90,11 +95,21 @@ body {
 
 .form-control-dark {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: #003c71;
   border-color: rgba(255, 255, 255, .1);
 }
 
 .form-control-dark:focus {
   border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  box-shadow: 0 0 0 3px #003c71;
+}
+
+header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow {
+  background-color: black !important;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.45)!important;
 }
