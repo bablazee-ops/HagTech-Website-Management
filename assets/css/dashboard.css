@@ -36,12 +36,12 @@ body {
 
 /*Shifting Column and main content down below navbar */
 .pt-3 {
-  padding-top: 4rem!important;
+  padding-top: 2.5rem !important;
 }
 
 /* Bringing Main Content Up */
 .d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pt-3.pb-2.mb-3.border-bottom {
-  margin-top: -3em;
+  margin-top: -1em;
 }
 
 .sidebar-sticky {
@@ -98,7 +98,7 @@ body {
 }
 
 .navbar .form-control {
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
   border-width: 0;
   border-radius: 0;
   border: 1px solid rgba(150, 150, 150, 0.384)
@@ -125,4 +125,8 @@ header.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0.shadow {
 
 .shadow {
   box-shadow: 0 .5rem 1rem rgba(3, 32, 112, 0.35)!important;
+}
+
+img.navbar-brand.col-md-3.col-lg-2.me-0.px-3{
+  width: 10em;
 }
